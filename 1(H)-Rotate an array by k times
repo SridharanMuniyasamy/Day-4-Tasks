@@ -1,0 +1,4 @@
+(function(arr, k) {
+    const rotatedArray = arr.slice(k % arr.length).concat(arr.slice(0, k % arr.length));
+    console.log(rotatedArray);
+})([1, 2, 3, 4, 5], 2);
