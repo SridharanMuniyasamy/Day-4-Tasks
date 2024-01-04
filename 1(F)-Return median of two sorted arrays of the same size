@@ -1,0 +1,6 @@
+(function(arr1, arr2) {
+    const combinedArray = arr1.concat(arr2).sort((a, b) => a - b);
+    const length = combinedArray.length;
+    const median = (combinedArray[Math.floor((length - 1) / 2)] + combinedArray[Math.ceil((length - 1) / 2)]) / 2;
+    console.log(median);
+})([1, 2, 3], [4, 5, 6]);
